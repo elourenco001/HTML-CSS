@@ -4,20 +4,56 @@
         <meta name="viewport" content="width=device-width, initial-scaled=1, maximum-scale=1.0"> <!--Declaracao para site responsivo Mobile-->
         <meta charset="utf-8"> <!--charset="utf-8" informa que estamos trabalhando com a lingua portuguesa, pois por padrao é o Ingles-->
         <title>Estudando HTML e CSS</title> <!--<title> é a declaracao para inserirmos um nome no titulo do navegador-->
+          <!--  <style type="text/css"> 
+                h1,h2{
+                    font-family: arial; <- Formatacao do texto em tela
+                    color: blue; <- Alterar a cor do texto em tela
+                }
+                p{
+                    font-family: arial;
+                    font-size: 18px;  <- Altera o tamanho do texto em tela *px* é o pixel da tela. 
+                    color: red; 
+                }
+                 #imagem-topo{ <- referencia ao ID mencionado no Figure
+                 background-color: #ADD8E6; <- Parametro para inserir cor de fundo ao imagem. '#xxxxx' = referencia a cor hexadecimal para o fundo da imagem
+                 text-align: center; <- Alinhamento do texto ao centro da pagina
+               }
+                  footer{
+                  background-color: #ADD8E6;
+                  text-align: center;
+              }
+            </style> -->  
+      <style type="text/css">
+        #imagem-topo{
+            background-color: #ADD8E6; 
+            text-align: center;
+        }
+        footer{
+            background-color: #ADD8E6;
+            text-align: center;
+        }
+    
+        h1,h2{
+
+            text-align: center;
+        }
+      </style>
+                
     </head>
+   
     <body> <!--body significa corpo do html-->
-
-        <img src="img/imagem-topo.png" alt="Imagem-topo"> <!--Declacao para inserir Imagens na Pagina-->
-
+        <figure id="imagem-topo"> <!--Linkando a imagem ao CSS para demoninacao do ID-->
+            <img src="img/imagem-topo.png" alt="logotipo-topo"> <!--Declacao para inserir Imagens na Pagina-->
+        </figure>
         <h1>Analise e Desenvolvimento de Software</h1> <!-- Declaracao dos parametros para pagina-->
 
         <p>Simplificando o Desenvolvimento WEB</p> <!-- Parametro para texto na pagina-->
-        <p>Analise de sistemas È a atividade que tem como finalidade a realizacao de estudos de processos a fim de encontrar o melhor caminho racional para que a 
+        <p><strong>Analise de sistemas</strong> é a atividade que tem como finalidade a realizacao de estudos de processos a fim de encontrar o melhor caminho racional para que a 
             informacao possa ser processada. Os analistas de sistemas estudam os diversos sistemas existentes entre hardwares (equipamentos), 
             softwares (programas) e o usuario final.
         </p>
         <p>Os seus comportamentos e aplicaveis sao desenvolvidos a partir de solucoes que serao padronizadas e transcritas da forma que o 
-        computador possa executar.
+        computador possa executar. 
         </p>
         <p>Os profissionais da ·rea geram softwares (programas), que s„o executados em hardwares (equipamentos) operados por usu·rios (indivÌduos), 
             preparados e treinados em procedimentos operacionais padronizados, dotados de conhecimentos do software e hardware para seu trabalho. 
