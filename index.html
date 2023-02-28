@@ -4,58 +4,11 @@
         <meta name="viewport" content="width=device-width, initial-scaled=1, maximum-scale=1.0"> <!--Declaracao para site responsivo Mobile-->
         <meta charset="utf-8"> <!--charset="utf-8" informa que estamos trabalhando com a lingua portuguesa, pois por padrao é o Ingles-->
         <title>Estudando HTML e CSS</title> <!--<title> é a declaracao para inserirmos um nome no titulo do navegador-->
-          <!--  <style type="text/css"> 
-                h1,h2{
-                    font-family: arial; <- Formatacao do texto em tela
-                    color: blue; <- Alterar a cor do texto em tela
-                }
-                p{
-                    font-family: arial;
-                    font-size: 18px;  <- Altera o tamanho do texto em tela *px* é o pixel da tela. 
-                    color: red; 
-                }
-                 #imagem-topo{ <- referencia ao ID mencionado no Figure
-                 background-color: #ADD8E6; <- Parametro para inserir cor de fundo ao imagem. '#xxxxx' = referencia a cor hexadecimal para o fundo da imagem
-                 text-align: center; <- Alinhamento do texto ao centro da pagina
-               }
-                  footer{
-                  background-color: #ADD8E6;
-                  text-align: center;
-              }
-               p{
-                padding: 5px; <- Alinhamento das Bordas
-                font-size: 16px; <- Ajuste do Tamanho do Texto
-                text-align: justify; <- Alinhamento do Corpo do Texto
-                font-family: arial; <- Formatacao do Texto
-          
-        } 
-            </style> -->  
-      <style type="text/css">
-        #imagem-topo{
-            background-color: #ADD8E6; 
-            text-align: center;
-        }
-        footer{
-            background-color: #ADD8E6;
-            text-align: center;
+            <link rel="stylesheet" type="text/css" href="css/estilo.css"> <!--Parametro para chamar o css-->
+         <script type="text/javascript">
+            var cliente = prompt("Por favor insira seu nome (opcional)")
             
-        }
-    
-        h1,h2{
-            font-size: 20px;
-            text-align: center;
-            padding: 5px;
-        } 
-        p{
-            padding: 5px;
-            font-size: 16px;
-            text-align: justify;
-            font-family: arial;
-            
-
-        } 
-      </style>
-                
+         </script>       
     </head>
    
     <body> <!--body significa corpo do html-->
@@ -63,6 +16,13 @@
             <img src="img/imagem-topo.png" alt="logotipo-topo"> <!--Declacao para inserir Imagens na Pagina-->
         </figure>
         <h1>Analise e Desenvolvimento de Software</h1> <!-- Declaracao dos parametros para pagina-->
+
+        <p class="cliente">
+            <script type="text/javascript">
+                document.write("Ola Sr(a) "+cliente+", seja bem vindo(a).")
+            </script>    
+
+
 
         <p><h2>Simplificando o Desenvolvimento WEB</h2></p> <!-- Parametro para texto na pagina-->
         <p><strong>Analise de sistemas</strong> é a atividade que tem como finalidade a realizacao de estudos de processos a fim de encontrar o melhor caminho racional para que a 
@@ -102,9 +62,9 @@
 
             <h3>DEV OLIVER_LOURENCO</h3>
             <b>CONTATOS:</b>
-            <br>OLIVER_LOURENCO@GMAIL.COM</br>
-            WHATAPP: (11)9 9999-9999</br>
-            CNPJ: 00.000.000/0001-00</br>
+            <br>OLIVER_LOURENCO@GMAIL.COM<br>
+            WHATAPP: (11)9 9999-9999<br>
+            CNPJ: 00.000.000/0001-00<br>
 
          </footer>
 
