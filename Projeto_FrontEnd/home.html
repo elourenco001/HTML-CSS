@@ -81,9 +81,72 @@
             font-size: 1.5rem;
             padding-bottom: 10px;
         }
+        .compre{
 
+            background-color: rgba(255, 255, 0, 1.0);
+            width: 150px;
+            height: 100px;
+            position: fixed;
+            right: 0;
+            text-align: center;
+            margin-top: 10%;
+            z-index: 1;
+
+        }
+        h5{
+            font-family: arial;
+            text-align: center;
+            padding: 1px;
+            font-size: 1.9rem;
+        }
+        button{
+            font-family: arial;
+            text-align: center;
+            padding: 5px;
+            font-size: 1.9rem;
+            background-color: rgba(50, 205, 50, 1.0);
+            color: #fff;
+            border: solid;
+
+        }
+
+        #grid-container {
+            margin-top: 5px;
+            margin-bottom: 10px;
+            background-color: rgba(255, 127, 80);
+            padding: 5px;
+
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-gap: 1px;
+            max-width: 1200px;
+            margin: 0 auto;
+
+
+        }
+        .grid div{
+            background-color: #fff;
+            font-family: arial;
+            text-align: center;
+            font-size: 1.6rem;
+            padding: 2px;
+
+
+        }
+        #formulario{
+        background-color:#008B8B;
+        font-family: arial;
+        text-align: center;
+        color: #fff;
+
+
+        }
 
     </style>
+<!--grid-template-columns: 1fr 1fr; <-- Parametro fr para facionar a coluna na tela e dividir de forma igual  -->
+<!--grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); <-- parametro para Responsividade das colunas-->
 
 </head>
 <body>
@@ -93,6 +156,10 @@
 
     </header>
     <br>
+    <div class="compre">
+        <h5>Compre agora mesmo</h5>
+        <button>COMPRAR</button>
+    </div>
     <section class="container"> <!--Criacao de um container dentro do Section-->
         <h1>Desenvolvedor Front-End</h1>
         <h2>Tenha uma ideia, que nós concretizamos</h2>
@@ -117,6 +184,31 @@
              processá-la para adequá-la a uma especificação em que o back-end a possa utilizar.
 
         </p>
+
+    </section>
+    <br>
+    <section class="container" id="grid-container"> <!--Criacao de um container dentro do Section-->
+        
+            <div class="grid">
+                <div>Conteudo 1</div>
+                <div>Conteudo 2</div>
+                <div>Conteudo 3</div>
+                <div>Conteudo 4</div>
+                <div>Conteudo 5</div>
+                <div>Conteudo 6</div>
+            
+            </div>
+
+    </section>
+    <section class="container" id="formulario"> <!--Criacao de um container dentro do Section-->
+        <h2>Selecione um Produto Para Mais Informacoes</h2>
+        <form action="#" method="get" target="_blank" >
+
+           <input type="text" id="nome" name="nome" placeholder="Insira seu Nome: "  >
+            
+
+
+        </form>
 
     </section>
     <br>
