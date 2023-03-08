@@ -193,6 +193,23 @@
             border-radius: 10px;
 
         }
+        .imagem-grid{
+            width: 18rem;
+            height: 10rem;
+            border-radius: 20%;
+
+        }
+        .texto-grid{
+            font-family: Arial;
+            font-size: 1.6rem;
+            text-align: center;
+
+        }
+        .link-grid{
+            color: #008000;
+            font-weight: bold;
+
+        }
 
     </style>
 <!--grid-template-columns: 1fr 1fr; <-- Parametro fr para facionar a coluna na tela e dividir de forma igual  -->
@@ -222,8 +239,8 @@
         <h1>Desenvolvedor Front-End</h1>
         <h2>Tenha uma ideia, que nós concretizamos</h2>
         <p>
-            Em ciência da computação, front-end, interface frontal ou parte frontal[1]
-             e back-end, parte secundária, parte de suporte ou parte de retaguarda[2] 
+            Em ciência da computação, front-end, interface frontal ou parte frontal
+             e back-end, parte secundária, parte de suporte ou parte de retaguarda 
              são termos generalizados que se referem às etapas inicial e final de um processo. 
              O front-end é responsável por coligir a entrada do usuário em várias formas e 
              processá-la para adequá-la a uma especificação em que o back-end a possa utilizar.
@@ -232,7 +249,8 @@
 
     </section>
     <br>
-    <section class="container"> <!--Criacao de um container dentro do Section-->
+   <!-- 
+    <section class="container"> 
         <h1>Desenvolvedor Front-End</h1>
         <p>
             Em ciência da computação, front-end, interface frontal ou parte frontal[1]
@@ -244,15 +262,26 @@
         </p>
 
     </section>
+     --> 
     <br>
     <section class="container" id="grid-container"> <!--Criacao de um container dentro do Section-->
         
             <div class="grid">
-                <div>Conteudo 1</div>
+                <div>
+                    <h2>Cursos de Office Essencial</h2>
+                    <img class="imagem-grid" src="img/office-essencial.jpg">
+                    <p class="texto-grid">Curso de Word, Excel, PowerPoint e Power BI</p>
+                    <a class="link-grid" href="#"> >>SAIBA MAIS<< </a>
+                </div>
+
                 <div>Conteudo 2</div>
+
                 <div>Conteudo 3</div>
+
                 <div>Conteudo 4</div>
+
                 <div>Conteudo 5</div>
+
                 <div>Conteudo 6</div>
             
             </div>
