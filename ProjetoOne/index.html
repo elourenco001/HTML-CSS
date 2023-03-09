@@ -12,6 +12,7 @@
         }
         html{
             font-size: 62.5%;
+            scroll-behavior: smooth;
         }
         header{
             background-color: #008B8B;
@@ -74,6 +75,13 @@
             font-size: 1.8rem; 
         
         }
+        h3{
+            font-family: arial;
+            text-align: center;
+            padding-top: 10px;
+            font-size: 1.5rem; 
+        
+        }
         .texto-footer{
             text-align: center;
             font-family: Arial;
@@ -120,7 +128,7 @@
         .grid{
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            grid-gap: 1px;
+            grid-gap: 3px;
             max-width: 1200px;
             margin: 0 auto;
 
@@ -132,6 +140,8 @@
             text-align: center;
             font-size: 1.6rem;
             padding: 2px;
+            padding-bottom: 10px;
+            box-shadow: 0.2px 0.2px #000;
 
 
         }
@@ -150,6 +160,7 @@
             text-align: left;
             margin-left: 5%;
             font-weight: bold;
+            text-shadow: 2px 2px #000 ;
         }
         input{
             font-family: sans-serif;
@@ -186,11 +197,13 @@
         #enviar{
             background-color: #3CB371;
             border-radius: 10px;
+            box-shadow: 2px 2px #000;
 
         }
         #limpar{
             background-color: #B22222;
             border-radius: 10px;
+            box-shadow: 2px 2px #000;
 
         }
         .imagem-grid{
@@ -206,10 +219,32 @@
 
         }
         .link-grid{
-            color: #008000;
+            
             font-weight: bold;
+            font-size: 1,8rem;
+            background-color: #008B8B;
+            border-radius: 20px;
+            padding: 5px;
+            
 
         }
+        #professor{
+            width: 18rem;
+            height: 18rem;
+            border-radius: 10%;
+            
+        }
+        ul,li{
+            font-size: 1.6rem;
+            font-family: arial;
+            text-align: left;
+            margin-left: 30px;
+            padding-bottom: 10px;
+        
+        }
+
+
+
 
     </style>
 <!--grid-template-columns: 1fr 1fr; <-- Parametro fr para facionar a coluna na tela e dividir de forma igual  -->
@@ -220,11 +255,11 @@
     <header>
         <nav>
             <a href="#">Inicio</a>
-            <a href="#">Cursos</a>
-            <a href="#">Sobre</a>
+            <a href="#Cursos">Cursos</a>
+            <a href="#Sobre">Sobre</a>
 
         </nav>
-        <h3>DEV OLIVER</h3>
+        <h1>DEV OLIVER</h1>
         <h4>FRONT-END ESSENCIAL</h4>
 
     </header>
@@ -249,44 +284,69 @@
 
     </section>
     <br>
-   <!-- 
-    <section class="container"> 
-        <h1>Desenvolvedor Front-End</h1>
-        <p>
-            Em ciência da computação, front-end, interface frontal ou parte frontal[1]
-             e back-end, parte secundária, parte de suporte ou parte de retaguarda[2] 
-             são termos generalizados que se referem às etapas inicial e final de um processo. 
-             O front-end é responsável por coligir a entrada do usuário em várias formas e 
-             processá-la para adequá-la a uma especificação em que o back-end a possa utilizar.
-
-        </p>
-
-    </section>
-     --> 
-    <br>
+    <a href="#" id="Cursos"></a>
     <section class="container" id="grid-container"> <!--Criacao de um container dentro do Section-->
         
             <div class="grid">
                 <div>
                     <h2>Cursos de Office Essencial</h2>
-                    <img class="imagem-grid" src="img/office-essencial.jpg">
-                    <p class="texto-grid">Curso de Word, Excel, PowerPoint e Power BI</p>
+                    <img class="imagem-grid" src="img/office-essencial.jpg" alt="Office Essencial">
+                    <p class="texto-grid">Curso Office com Power BI</p>
                     <a class="link-grid" href="#"> >>SAIBA MAIS<< </a>
                 </div>
 
-                <div>Conteudo 2</div>
+                <div>
+                    <h2>Office VBA</h2>
+                    <img class="imagem-grid" src="img/office-vba.jpg" alt="Office VBA">
+                    <p class="texto-grid">Curso Office com Programacao VBA</p>
+                    <a class="link-grid" href="#"> >>SAIBA MAIS<< </a> 
+                </div>
 
-                <div>Conteudo 3</div>
+                <div>
+                    <h2>Excel para BI</h2>
+                    <img class="imagem-grid" src="img/excel-bi.jpg" alt="Excel BI">
+                    <p class="texto-grid">Curso Excel para BI</p>
+                    <a class="link-grid" href="#"> >>SAIBA MAIS<< </a>
+                </div>
 
-                <div>Conteudo 4</div>
+                <div>
+                    <h2>HTML & CSS Essencial</h2>
+                    <img class="imagem-grid" src="img/html-css.jpg" alt="HTML & CSS Essencial">
+                    <p class="texto-grid">Curso HTML e CSS</p>
+                    <a class="link-grid" href="#"> >>SAIBA MAIS<< </a>
+                </div>
 
-                <div>Conteudo 5</div>
+                <div>
+                    <h2>Logica de Programacao</h2>
+                    <img class="imagem-grid" src="img/logica.jpg" alt="Logica de Programacao">
+                    <p class="texto-grid">Curso de Logica de Programacao</p>
+                    <a class="link-grid" href="#"> >>SAIBA MAIS<< </a>
+                </div>
 
-                <div>Conteudo 6</div>
-            
+                <div>
+                    <h2>Web PHP</h2>
+                    <img class="imagem-grid" src="img/web-php.jpg" alt="Web PHP">
+                    <p class="texto-grid">Curso de PHP</p>
+                    <a class="link-grid" href="#"> >>SAIBA MAIS<< </a>
+                </div>
+                
             </div>
+            
 
     </section>
+    <section class="container"> 
+        <h2>Desenvolvedor Oliver Lourenco</h2>
+        <h3>Front-End com CSS & JavaScript com Enfase em Angular</h3>
+        <h2><img id="professor" src="img/Cartoonify (1).png" alt="Dev Oliver Lourenco"  ></h2>
+        <p>
+            Possuo uma experiencia de 13 anos trabalhando com Tecnologia, Formado em Sistema da Informacao, Pós Graduado em Engenharia de Software. Conquistei mais
+            de 20 certificacoes entre DevOps e Scrum nas mais renomadas certificadoras. Apaixonado por Tecnologia desde os 13 anos, 
+            sempre em busca do novo, entender como as coisas funcionam. Atualmente estou no chapeu de Scrum Master
+            realizando uma transicao de carreira para Dev Front End. 
+        </p>
+        <a href="#" id="Sobre"></a>
+    </section>    
+    <br>  
     <section class="container" id="formulario"> <!--Criacao de um container dentro do Section-->
         <h2>Selecione um Produto Para Mais Informacoes</h2>
         <form action="#" method="get" target="_blank" >
@@ -319,6 +379,20 @@
             </p>
         </form>
 
+    </section>
+    <br>
+
+    <section class="container"> <!--Criacao de um container dentro do Section-->
+        
+        <h2>Tenha uma ideia, que nós concretizamos</h2>
+        <ul>
+            <li>Desenvolvimento de Sites</li>
+            <li>Marketing Digital</li>
+            <li>Desenvolvimento de Aplicativos</li>
+            <li>Consultoria em Transformacao Digital</li>
+
+        </ul>
+      
     </section>
     <br>
     <footer>
