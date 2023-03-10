@@ -1,254 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
     <title>Front-End Essencial</title>
-    <style type="text/css">
-        *{
-            margin: 0;
-            border: 0;
-            padding: 0;
-        }
-        html{
-            font-size: 62.5%;
-            scroll-behavior: smooth;
-        }
-        header{
-            background-color: #008B8B;
-            color: #FFFF;
-            font-family: arial;
-            padding: 5px;
-            text-align: center;
-        }
-        h3{
-            font-size: 1.8rem;
-            font-family: arial;
-            margin : 0; 
-            padding: 5px;           
-        }
-        h4{
-            font-size: 1.0rem;
-            font-family: arial;
-            margin: 0;
-            padding-left: 5px;
-            padding-bottom: 5px;
-        }
-        body{
-            background-color: #f5f5f5;
-        }
-        .container{
-            background-color: #FFFF;
-            width: 95%;
-            box-shadow: 2px 2px 10px #008B8B;
-            margin: 0 auto;
-            max-width: 90%;
-            max-height: 90%;
-            min-height: 0;
-            min-width: 0;
-            }
-        footer{
-            font-family: arial;
-            color: #FFFF;
-            background-color: #008B8B;
-            text-align: center;
-            padding-top: 5px;
-            padding-bottom: 5px;
-        
-        }
-        p{
-            font-family: arial;
-            text-align: justify;
-            padding: 5px;
-            font-size: 1.6rem;
-        }
-        h1{
-            font-family: arial;
-            text-align: center;
-            padding-top: 10px;
-            font-size: 2.3rem;
-        }
-        h2{
-            font-family: arial;
-            text-align: center;
-            padding-top: 10px;
-            font-size: 1.8rem; 
-        
-        }
-        h3{
-            font-family: arial;
-            text-align: center;
-            padding-top: 10px;
-            font-size: 1.5rem; 
-        
-        }
-        .texto-footer{
-            text-align: center;
-            font-family: Arial;
-            padding-top: 5px;
-            font-size: 1.5rem;
-            padding-bottom: 10px;
-        }
-        .compre{
-
-            background-color: rgba(255, 255, 0, 1.0);
-            width: 150px;
-            height: 100px;
-            position: fixed;
-            right: 0;
-            text-align: center;
-            margin-top: 10%;
-            z-index: 1;
-
-        }
-        h5{
-            font-family: arial;
-            text-align: center;
-            padding: 1px;
-            font-size: 1.9rem;
-        }
-        button{
-            font-family: arial;
-            text-align: center;
-            padding: 5px;
-            font-size: 1.9rem;
-            background-color: rgba(50, 205, 50, 1.0);
-            color: #fff;
-            border: solid;
-
-        }
-
-        #grid-container {
-            margin-top: 5px;
-            margin-bottom: 10px;
-            background-color: rgba(0,139,139);
-            padding: 5px;
-
-        }
-        .grid{
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            grid-gap: 3px;
-            max-width: 1200px;
-            margin: 0 auto;
-
-
-        }
-        .grid div{
-            background-color: #fff;
-            font-family: arial;
-            text-align: center;
-            font-size: 1.6rem;
-            padding: 2px;
-            padding-bottom: 10px;
-            box-shadow: 0.2px 0.2px #000;
-
-
-        }
-        #formulario{
-        background-color:#008B8B;
-        font-family: arial;
-        text-align: center;
-        color: #fff;
-
-
-        }
-        .formulario-contato{
-            font-family: arial;
-            font-size: 1.8rem;
-            padding: 10px;
-            text-align: left;
-            margin-left: 5%;
-            font-weight: bold;
-            text-shadow: 2px 2px #000 ;
-        }
-        input{
-            font-family: sans-serif;
-            font-size: 1.7rem;
-            padding: 5px;
-            
-            
-        }
-        .dados-formulario{
-            width: 93%;
-
-        }
-        nav{
-            text-align: right;
-            margin-top: 10px;
-            font-weight: bold;
-            font-family: arial;
-            font-size: 1.6rem;
-            margin-right: 2%;
-            word-spacing: 10px;
-
-        }
-        a{
-            text-decoration: none;
-            color: rgba(255, 255, 255, 1.0);
-            transition: all 700ms ease-in-out;
-            
-        }
-        a:hover{
-            color: rgba(0,255,255);
-
-
-        }
-        #enviar{
-            background-color: #3CB371;
-            border-radius: 10px;
-            box-shadow: 2px 2px #000;
-
-        }
-        #limpar{
-            background-color: #B22222;
-            border-radius: 10px;
-            box-shadow: 2px 2px #000;
-
-        }
-        .imagem-grid{
-            width: 18rem;
-            height: 10rem;
-            border-radius: 20%;
-
-        }
-        .texto-grid{
-            font-family: Arial;
-            font-size: 1.6rem;
-            text-align: center;
-
-        }
-        .link-grid{
-            
-            font-weight: bold;
-            font-size: 1,8rem;
-            background-color: #008B8B;
-            border-radius: 20px;
-            padding: 5px;
-            
-
-        }
-        #professor{
-            width: 18rem;
-            height: 18rem;
-            border-radius: 10%;
-            
-        }
-        ul,li{
-            font-size: 1.6rem;
-            font-family: arial;
-            text-align: left;
-            margin-left: 30px;
-            padding-bottom: 10px;
-        
-        }
-
-
-
-
-    </style>
-<!--grid-template-columns: 1fr 1fr; <-- Parametro fr para facionar a coluna na tela e dividir de forma igual  -->
-<!--grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); <-- parametro para Responsividade das colunas-->
 
 </head>
 <body>
@@ -264,13 +21,8 @@
 
     </header>
     <br>
-    <!-- Compre na Lateral do Site
-    <div class="compre">
-        <h5>Compre agora mesmo</h5>
-        <button>COMPRAR</button>
-    </div>
--->
-    <section class="container"> <!--Criacao de um container dentro do Section-->
+ 
+    <section class="container"> 
         <h1>Desenvolvedor Front-End</h1>
         <h2>Tenha uma ideia, que nós concretizamos</h2>
         <p>
@@ -285,7 +37,7 @@
     </section>
     <br>
     <a href="#" id="Cursos"></a>
-    <section class="container" id="grid-container"> <!--Criacao de um container dentro do Section-->
+    <section class="container" id="grid-container"> 
         
             <div class="grid">
                 <div>
@@ -347,7 +99,7 @@
         <a href="#" id="Sobre"></a>
     </section>    
     <br>  
-    <section class="container" id="formulario"> <!--Criacao de um container dentro do Section-->
+    <section class="container" id="formulario"> 
         <h2>Selecione um Produto Para Mais Informacoes</h2>
         <form action="#" method="get" target="_blank" >
 
@@ -382,10 +134,11 @@
     </section>
     <br>
 
-    <section class="container"> <!--Criacao de um container dentro do Section-->
+    <section class="container"> 
         
         <h2>Tenha uma ideia, que nós concretizamos</h2>
         <ul>
+            <br>
             <li>Desenvolvimento de Sites</li>
             <li>Marketing Digital</li>
             <li>Desenvolvimento de Aplicativos</li>
@@ -401,7 +154,8 @@
         <br>
         <p class="texto-footer">Contatos: </p>
         <p class="texto-footer">oliverlourenco001@gmail.com</p>
-        <p class="texto-footer">WhatsApp: (11)00000-0000</p>
+        <p class="texto-footer">WhatsApp: (11) 0 0000-0000</p>
+        <p class="texto-footer">Instagram: <a href="https://www.instagram.com/emerson_lourenco001/">@emerson_lourenco001</a></p>
         <p class="texto-footer">CNPJ:00.000.000/0001-00</p>
 
     </footer>
@@ -410,13 +164,3 @@
 
 </html>
 
-<!--
-    # id -> Unico
-    . Classe -> Pode ser usado mais de 1 vez
-.container{  <-- Criacao de um container (Caixa) no texto no qual estamos editando
-            background-color: #FFFF;
-            width: 95%; <-- Parametro para resolucao da caixa em tela
-            box-shadow: 2px 2px #008B8B; <-- Criar uma linha ou borda em volta da caixa
-            margin: 0 auto; <-- Alinhamento padrao para caixa centralizando na pagina
-
--->
