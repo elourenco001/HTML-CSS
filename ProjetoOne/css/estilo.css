@@ -14,6 +14,13 @@ header{
     padding: 5px;
     text-align: center;
 }
+
+@media(min-width: 280px) and (max-width: 450px){
+    header{
+        text-align: center;
+    }
+}
+
 h3{
     font-size: 1.8rem;
     font-family: arial;
@@ -176,6 +183,20 @@ nav{
     word-spacing: 10px;
 
 }
+
+@media (min-width: 320px) and (max-width: 450px){
+    nav{
+        text-align: center;
+        margin-top: 10px;
+        font-weight: bold;
+        font-family: arial;
+        font-size: 1.6rem;
+        word-spacing: 15px;
+    
+    }
+
+}
+
 a{
     text-decoration: none;
     color: rgba(255, 255, 255, 1.0);
@@ -233,5 +254,14 @@ ul,li{
     text-align: left;
     margin-left: 30px;
     padding-bottom: 10px;
+
+}
+.imagem-grid{
+    transition: 300ms ease-in-out;
+}
+img:hover{
+    transform: scale(1.1);
+    border: solid rgba(255, 255, 255, 1.0);
+    box-shadow: 1px 1px 3px #000;
 
 }
